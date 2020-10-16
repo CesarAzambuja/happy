@@ -1,0 +1,25 @@
+{
+  "name": "happy",
+  "version": "1.0.0",
+  "description": "Projeto Criado na 3ª edição do NLW",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CesarAzambuja/happy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CesarAzambuja/happy/issues"
+  },
+  "homepage": "https://github.com/CesarAzambuja/happy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.5"
+  }
+}
