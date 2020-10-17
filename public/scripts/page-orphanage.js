@@ -6,8 +6,12 @@ const options = {
     zoomControl: false
 }
 
+//get values from document HTML
+const lat = document.querySelector('span[data-lat]').dataset.lat;
+const lng = document.querySelector('span[data-lng]').dataset.lng;
+
 //Create Map
-const map = L.map('mapid', options).setView([-23.9554498,-46.3702686], 13);
+const map = L.map('mapid', options).setView([lat,lng], 15);
 
 //Create and add tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
@@ -22,7 +26,8 @@ const icon = L.icon({
 
 
 //Create and add marker
-L.marker([-23.9554498,-46.3702686], {icon})
+
+L.marker([lat, lng], {icon})
 .addTo(map)
 
 

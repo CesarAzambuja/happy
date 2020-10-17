@@ -90,6 +90,10 @@ function toggleSelect(event){
 
     input.value = button.dataset.value
 
+    function validate(event) {
 
+        //validar se os campos Span lat e lng estã preenchidos com um if buscando o campo com document queryselector e vendo o value
+        event.preventDefault()
+    }
    
 }
