@@ -52,9 +52,9 @@ module.exports =  {
         const fields = req.body
 
         //Validar se todos os campos estão preenchidos
-        if(Object.values(fields).includes('')){
-            return res.send('Todos os campos devem estar preenchidos')
-        }
+        //if(Object.values(fields).includes('')){
+          //  return res.send('Todos os campos devem estar preenchidos')
+        //}
 
         try {
             //salvar um orfanato

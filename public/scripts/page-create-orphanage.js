@@ -90,10 +90,18 @@ function toggleSelect(event){
 
     input.value = button.dataset.value
 
-    function validate(event) {
+};
 
-        //validar se os campos Span lat e lng estã preenchidos com um if buscando o campo com document queryselector e vendo o value
+//validar se os campos Span lat e lng estã preenchidos com um if buscando o campo com document queryselector e vendo o value
+function validate(event) {
+    const savelat = document.querySelector('[name=lat]').value
+    const savelng = document.querySelector('[name=lng]').value
+
+    
+    if(savelat == "" && savelng == ""){
+
+        alert("Favor indicar o local no Mapa")
         event.preventDefault()
     }
-   
-}
+    
+  }

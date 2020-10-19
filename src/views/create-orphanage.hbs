@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="/css/form.css">
         <link rel="stylesheet" href="/css/page-create-orphanage.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lar das Meninas | Happy</title>
+        <title>Cadastro | Happy</title>
         <link rel="icon" href="/images/logo-icon.png">
     </head>
     <body>
@@ -36,14 +36,14 @@
                 </footer>
             </aside>
             <main class="animate-appear with-sidebar">
-               <form action="save-orphanage" method="POST" onsubmit="validate(event)">
+               <form action="save-orphanage" method="POST" onsubmit="validate (event)" name="form">
                    <fieldset>
                        <legend>Dados</legend>
 
                        <div class="map-container">
                            <div id="mapid"></div>
-                           <input type="hidden" name="lat" required>
-                           <input type="hidden" name="lng" required>
+                           <input type="hidden" name="lat">
+                           <input type="hidden" name="lng">
                            <footer>
                                <a href="#" id="select-point">Clique no mapa para adicionar a localização</a>
                            </footer>
@@ -91,8 +91,8 @@
                        <legend>Visitação</legend>
 
                        <div class="input-block">
-                            <label for="instructions">Instruções</label>
-                            <textarea type="text" id="instructions" name="instructions" required></textarea>
+                            <label for="instruction">Instruções</label>
+                            <textarea type="text" id="instruction" name="instruction" required></textarea>
                        </div><!--input-block-->
 
                        <div class="input-block">
@@ -119,7 +119,7 @@
 
                             <button type="submit" class="primary-button">Confirmar</button>
 
-                        </div><!--input-block--
+                        </div><!--input-block-->
 
                    </fieldset>
                </form>
